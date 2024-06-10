@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="aj_pos_clear_button.ClearButton">
+        <button class="control-button btn btn-light rounded-0 fw-bolder" t-on-click="() => this.click()">
+             <i class="fa fa-remove" role="img" arial-label="Clear Button" title="Clear Button"/>Tout effacer
+        </button>
+    </t>
+
+</templates>

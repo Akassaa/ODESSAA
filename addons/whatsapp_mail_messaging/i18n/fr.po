@@ -1,0 +1,230 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* whatsapp_mail_messaging
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-06 13:07+0000\n"
+"PO-Revision-Date: 2024-03-06 13:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: whatsapp_mail_messaging
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.portal_share_wizard
+msgid "Add a note"
+msgstr "Ajouter une note"
+
+#. module: whatsapp_mail_messaging
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.portal_share_wizard
+msgid "Add contacts to share the document..."
+msgstr "Ajouter des contacts pour partager le document..."
+
+#. module: whatsapp_mail_messaging
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.whatsapp_send_message_view_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__mobile
+msgid "Contact Number"
+msgstr "Numéro de contact"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,help:whatsapp_mail_messaging.field_whatsapp_send_message__mobile
+msgid "Contact number of Partner"
+msgstr "Numéro de contact du partenaire"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__create_uid
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__create_date
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_portal_share__partner_id
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_project_share_wizard__partner_id
+msgid "Customer"
+msgstr "Client"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__display_name
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__id
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__id
+msgid "ID"
+msgstr "ID"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__image_1920
+msgid "Image"
+msgstr "Image"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,help:whatsapp_mail_messaging.field_whatsapp_send_message__image_1920
+msgid "Image of Partner"
+msgstr "Image du partenaire"
+
+#. module: whatsapp_mail_messaging
+#. odoo-python
+#: code:addons/whatsapp_mail_messaging/model/account_move.py:0
+#: code:addons/whatsapp_mail_messaging/model/sale_order.py:0
+#, python-format
+msgid ""
+"It appears that you have selected orders from multiple customers. Please "
+"select orders from a single customer."
+msgstr ""
+"Il semble que vous ayez sélectionné des commandes de plusieurs clients. "
+"Veuillez sélectionner des commandes d'un seul client."
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model,name:whatsapp_mail_messaging.model_account_move
+msgid "Journal Entry"
+msgstr "Opération comptable"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__write_uid
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__write_date
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields.selection,name:whatsapp_mail_messaging.selection__portal_share__share_type__mail
+#: model:ir.model.fields.selection,name:whatsapp_mail_messaging.selection__project_share_wizard__share_type__mail
+msgid "Mail"
+msgstr "Mail"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__message
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__message
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.selection_message_view_form
+msgid "Message"
+msgstr "Message"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,help:whatsapp_mail_messaging.field_whatsapp_send_message__message
+msgid "Message to send"
+msgstr "Message à envoyer"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_portal_share__mobile_number
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_project_share_wizard__mobile_number
+msgid "Mobile number"
+msgstr "Numéro de portable"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_selection_message__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,help:whatsapp_mail_messaging.field_selection_message__name
+msgid "Name of message template"
+msgstr "Nom du modèle de message"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,help:whatsapp_mail_messaging.field_whatsapp_send_message__partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model,name:whatsapp_mail_messaging.model_portal_share
+msgid "Portal Sharing"
+msgstr "Partage du portail"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_whatsapp_send_message__partner_id
+msgid "Recipient"
+msgstr "Destinataire"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model,name:whatsapp_mail_messaging.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.actions.act_window,name:whatsapp_mail_messaging.selection_message_action
+#: model:ir.model,name:whatsapp_mail_messaging.model_selection_message
+msgid "Selection Message"
+msgstr "Message de sélection"
+
+#. module: whatsapp_mail_messaging
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.portal_share_wizard
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.whatsapp_send_message_view_form
+msgid "Send"
+msgstr "Envoyer"
+
+#. module: whatsapp_mail_messaging
+#. odoo-javascript
+#: code:addons/whatsapp_mail_messaging/static/src/xml/whatsapp_icon_template.xml:0
+#, python-format
+msgid "Send Message Through Whatsapp"
+msgstr "Envoyer un message via Whatsapp"
+
+#. module: whatsapp_mail_messaging
+#. odoo-javascript
+#: code:addons/whatsapp_mail_messaging/static/src/xml/mail_icon_template.xml:0
+#, python-format
+msgid "Send a Message Through Mail"
+msgstr "Envoyer un message par e-mail"
+
+#. module: whatsapp_mail_messaging
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.view_move_form
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.view_order_form
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.view_out_invoice_tree
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.view_quotation_tree_with_onboarding
+msgid "Send by Whatsapp"
+msgstr "Envoyer via Whatsapp"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_portal_share__share_type
+#: model:ir.model.fields,field_description:whatsapp_mail_messaging.field_project_share_wizard__share_type
+msgid "Sharing Method"
+msgstr "Méthode de partage"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields,help:whatsapp_mail_messaging.field_selection_message__message
+msgid "The message to send"
+msgstr "Le message à envoyer"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model.fields.selection,name:whatsapp_mail_messaging.selection__portal_share__share_type__whatsapp
+#: model:ir.model.fields.selection,name:whatsapp_mail_messaging.selection__project_share_wizard__share_type__whatsapp
+msgid "Whatsapp"
+msgstr "Whatsapp"
+
+#. module: whatsapp_mail_messaging
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.whatsapp_send_message_view_form
+msgid "Whatsapp Message"
+msgstr "Message Whatsapp"
+
+#. module: whatsapp_mail_messaging
+#: model:ir.model,name:whatsapp_mail_messaging.model_whatsapp_send_message
+msgid "Whatsapp Send Message"
+msgstr "Message Whatsapp envoyé"
+
+#. module: whatsapp_mail_messaging
+#: model_terms:ir.ui.view,arch_db:whatsapp_mail_messaging.selection_message_view_form
+msgid "Write Message here...."
+msgstr "Écrivez le message ici...."

@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_takeaway
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-03 14:11+0000\n"
+"PO-Revision-Date: 2024-03-03 14:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_takeaway
+#. odoo-javascript
+#: code:addons/pos_takeaway/static/src/xml/Screens/ProductScreen/ControlButton/TakeAway.xml:0
+#: code:addons/pos_takeaway/static/src/xml/Screens/ProductScreen/ReceiptScreen/ReceiptHeader.xml:0
+#, python-format
+msgid "A Emporter"
+msgstr "A Emporter"
+
+#. module: pos_takeaway
+#: model:ir.model,name:pos_takeaway.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: pos_takeaway
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.view_pos_order_filter
+msgid "Dine In"
+msgstr "Sur place"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,field_description:pos_takeaway.field_pos_config__is_generate_token
+#: model:ir.model.fields,field_description:pos_takeaway.field_res_config_settings__is_generate_token
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.res_config_settings_view_form
+msgid "Generate Token"
+msgstr "Générer un jeton"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,help:pos_takeaway.field_pos_config__is_generate_token
+msgid "Generate Token Number"
+msgstr "Générer un numéro de jeton"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,field_description:pos_takeaway.field_pos_order__is_takeaway
+#: model:ir.model.fields,help:pos_takeaway.field_pos_order__is_takeaway
+msgid "Is a Takeaway Order"
+msgstr "Est une commande à emporter"
+
+#. module: pos_takeaway
+#. odoo-javascript
+#: code:addons/pos_takeaway/static/src/xml/Screens/ProductScreen/ReceiptScreen/ReceiptHeader.xml:0
+#, python-format
+msgid "Numéro Jeton :"
+msgstr "Numéro Jeton"
+
+#. module: pos_takeaway
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.res_config_settings_view_form
+msgid "Other Features"
+msgstr "Autres fonctionnalités"
+
+#. module: pos_takeaway
+#: model:ir.model,name:pos_takeaway.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr ""
+
+#. module: pos_takeaway
+#: model:ir.model,name:pos_takeaway.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Configuration du point de vente"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,field_description:pos_takeaway.field_pos_config__is_pos_takeaway
+#: model:ir.model.fields,field_description:pos_takeaway.field_res_config_settings__is_takeaway
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.res_config_settings_view_form
+msgid "Pos TakeAway"
+msgstr "Point de vente à emporter"
+
+#. module: pos_takeaway
+#. odoo-javascript
+#: code:addons/pos_takeaway/static/src/xml/Screens/ProductScreen/ReceiptScreen/ReceiptHeader.xml:0
+#, python-format
+msgid "Sur Place"
+msgstr "Sur Place"
+
+#. module: pos_takeaway
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.view_pos_order_filter
+msgid "Take Away"
+msgstr "À emporter"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,help:pos_takeaway.field_pos_config__is_pos_takeaway
+#: model:ir.model.fields,help:pos_takeaway.field_res_config_settings__is_takeaway
+msgid "TakeAway, Dine-in on Restaurant"
+msgstr "À emporter, Diner sur place au restaurant"
+
+#. module: pos_takeaway
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.res_config_settings_view_form
+msgid "TakeAway,Dine-in"
+msgstr "À emporter, Sur place"
+
+#. module: pos_takeaway
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.res_config_settings_view_form
+msgid "TakeAway,Dine-in on Restaurant"
+msgstr "À emporter, Diner sur place au restaurant"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,help:pos_takeaway.field_res_config_settings__pos_token
+msgid "The token will start from 1."
+msgstr "Le jeton commencera à partir de 1"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,help:pos_takeaway.field_res_config_settings__is_generate_token
+#: model_terms:ir.ui.view,arch_db:pos_takeaway.res_config_settings_view_form
+msgid "This Token number starts from 1"
+msgstr "Ce numéro de jeton commence à partir de 1"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,field_description:pos_takeaway.field_res_config_settings__pos_token
+msgid "Token"
+msgstr "Jeton"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,field_description:pos_takeaway.field_pos_config__pos_token
+msgid "Token Number"
+msgstr "Numéro de jeton"
+
+#. module: pos_takeaway
+#: model:ir.model.fields,help:pos_takeaway.field_pos_config__pos_token
+msgid "Token number starts from 1"
+msgstr "Le numéro de jeton commence à partir de 1"

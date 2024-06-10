@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="templa" xml:space="preserve">
+    <t t-name="FloorScreenMenu" owl="1" >  
+        <div class="ticket-button reserv-button link-btn" t-if="env.pos.config &amp;&amp; env.pos.config.is_table_management" t-on-click="onClick"> 
+            <div class="with-badge">
+                <i class="fa fa-table" aria-hidden="true"></i>
+            </div>
+            <div class="link-btn-text">Floors</div> 
+        </div>
+    </t>                                                
+    <t t-name="Chrome" t-inherit="point_of_sale.Chrome" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('pos-branding')]" position="after">   
+            <FloorScreenMenu/>
+        </xpath>
+    </t>
+</templates>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="cart_ord_popup_bits">
+        <div class="popup popup-ord-items">
+            <div class="modal-header drag-handle">
+                <h4 class="modal-title"><t t-esc="props.title" /></h4>
+            </div> 
+            <div class="order-items btn-group-vertical justify-content-start w-100 p-3 overflow-y-auto"> 
+                <t t-foreach="displayCategoryCount" t-as="categoryCountLine"  t-key="categoryCountLine_index">
+                    <div class="item d-flex justify-content-start g-0 my-1 w-100">
+                        <label class="rounded px-2 py-0 me-1" style="background-color:rgba(0, 0, 0, 0.3);"><b><t t-esc="categoryCountLine.count"/></b></label>
+                        <h4 class="text-truncate ps-0 m-0" ><t t-esc="categoryCountLine.name"/></h4>
+                    </div>
+                </t> 
+            </div>
+            <footer class="footer centered modal-footer justify-content-center"> 
+                <button class="button cancel btn btn-lg btn-secondary" t-on-mousedown.prevent="cancel">
+                    Ok
+                </button>
+            </footer>
+        </div>
+    </t>
+
+</templates>

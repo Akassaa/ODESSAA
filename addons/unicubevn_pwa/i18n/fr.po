@@ -1,0 +1,310 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* unicubevn_pwa
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-03 18:14+0000\n"
+"PO-Revision-Date: 2024-03-03 18:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__api_key
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__api_key
+msgid "Api Key"
+msgstr "Clé API"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__app_id_firebase
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__app_id_firebase
+msgid "App Id"
+msgstr "Identifiant de l'application"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__pwa_name
+msgid "App Name"
+msgstr "Nom de l'application"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__auth_domain
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__auth_domain
+msgid "Auth Domain"
+msgstr "Domaine d'authentification"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__pwa_background_color
+msgid "Background Color"
+msgstr "Couleur de fond"
+
+#. module: unicubevn_pwa
+#: model:ir.model,name:unicubevn_pwa.model_res_company
+msgid "Companies"
+msgstr "Entreprises"
+
+#. module: unicubevn_pwa
+#: model:ir.model,name:unicubevn_pwa.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: unicubevn_pwa
+#. odoo-python
+#: code:addons/unicubevn_pwa/models/res_config_settings.py:0
+#: code:addons/unicubevn_pwa/models/res_pwa_configs.py:0
+#, python-format
+msgid "Connection successfully established"
+msgstr "La connexion a été établie avec succès"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_push_notification__user_id
+msgid "Corresponding Firebase User"
+msgstr "Utilisateur Firebase correspondant"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__api_key
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__api_key
+msgid "Corresponding apiKey of firebase config"
+msgstr "Clé API correspondante de la configuration Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__app_id_firebase
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__app_id_firebase
+msgid "Corresponding appId of firebase config"
+msgstr "Identifiant de l'application correspondant de la configuration Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__auth_domain
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__auth_domain
+msgid "Corresponding authDomain of firebase config"
+msgstr "Domaine d'authentification correspondant de la configuration Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__measurement_id_firebase
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__measurement_id_firebase
+msgid "Corresponding measurementId of firebase config"
+msgstr "Identifiant de mesure correspondant de la configuration Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__messaging_sender_id_firebase
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__messaging_sender_id_firebase
+msgid "Corresponding messagingSenderId of firebase config"
+msgstr "Identifiant d'envoi de messages correspondant de la configuration Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__project_id_firebase
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__project_id_firebase
+msgid "Corresponding projectId of firebase config"
+msgstr "Identifiant de projet correspondant de la configuration Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__storage_bucket
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__storage_bucket
+msgid "Corresponding storageBucket of firebase config"
+msgstr "Correspondance du stockage de données de la configuration Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: unicubevn_pwa
+#: model:ir.model,name:unicubevn_pwa.model_mail_thread
+msgid "Email Thread"
+msgstr "Fil de messagerie"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__push_notification
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__push_notification
+msgid "Enable Push Notification"
+msgstr "Activer les notifications push"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__push_notification
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__push_notification
+msgid "Enable Web Push Notification"
+msgstr "Activer les notifications push web"
+
+#. module: unicubevn_pwa
+#. odoo-python
+#: code:addons/unicubevn_pwa/models/res_config_settings.py:0
+#: code:addons/unicubevn_pwa/models/res_pwa_configs.py:0
+#, python-format
+msgid "Failed to connect with firebase"
+msgstr "Échec de la connexion avec Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_push_notification__register_id
+msgid "Firebase Registration Token"
+msgstr "Token d'enregistrement Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__user_id
+msgid "Firebase User"
+msgstr "Utilisateur Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__id
+msgid "ID"
+msgstr "Identifiant"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__pwa_icon
+msgid "Icon"
+msgstr "Icône"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__measurement_id_firebase
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__measurement_id_firebase
+msgid "Measurement Id"
+msgstr "Identifiant de mesure"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__messaging_sender_id_firebase
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__messaging_sender_id_firebase
+msgid "Messaging Sender Id"
+msgstr "Identifiant de l'expéditeur de messages"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__pwa_name
+msgid "Name of the Progressive Web Application"
+msgstr "Nom de l'application Web progressive"
+
+#. module: unicubevn_pwa
+#: model:ir.actions.act_window,name:unicubevn_pwa.push_notification_list_view
+#: model:ir.ui.menu,name:unicubevn_pwa.noti_devices
+#: model_terms:ir.ui.view,arch_db:unicubevn_pwa.view_push_notification_tree
+msgid "Notification Devices"
+msgstr "Appareils de notification"
+
+#. module: unicubevn_pwa
+#: model_terms:ir.ui.view,arch_db:unicubevn_pwa.view_push_notification_form
+msgid "Notification Devices Detail"
+msgstr "Détails des appareils de notification"
+
+#. module: unicubevn_pwa
+#: model_terms:ir.ui.view,arch_db:unicubevn_pwa.pwa_res_config_settings_view_form_title
+msgid "PWA"
+msgstr "PWA"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__project_id_firebase
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__project_id_firebase
+msgid "Project Id"
+msgstr "ID de projet"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_push_notification__register_id
+msgid "Registration Id"
+msgstr "Identifiant d'inscription"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__server_key
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__server_key
+msgid "Server Key"
+msgstr "Clé du serveur"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__server_key
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__server_key
+msgid "Server Key of the firebase"
+msgstr "Clé du serveur de Firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__pwa_short_name
+msgid "Short Name"
+msgstr "Nom court"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__pwa_short_name
+msgid "Short Name of the Progressive Web Application"
+msgstr "Nom court de l'application Web progressive"
+
+#. module: unicubevn_pwa
+#: model_terms:ir.actions.act_window,help:unicubevn_pwa.push_notification_list_view
+msgid "Show all notification registered devices"
+msgstr "Afficher tous les appareils enregistrés pour les notifications"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__storage_bucket
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__storage_bucket
+msgid "Storage Bucket"
+msgstr "Bucket de stockage"
+
+#. module: unicubevn_pwa
+#: model_terms:ir.ui.view,arch_db:unicubevn_pwa.pwa_res_config_settings_view_form_title
+msgid "Test Connection"
+msgstr "Tester la connexion"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__pwa_theme_color
+msgid "Theme Color"
+msgstr "Couleur du thème"
+
+#. module: unicubevn_pwa
+#: model_terms:ir.ui.view,arch_db:unicubevn_pwa.pwa_res_config_settings_view_form_title
+msgid "This name will be used for browser title"
+msgstr "Ce nom sera utilisé pour le titre du navigateur"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_company__vapid
+#: model:ir.model.fields,help:unicubevn_pwa.field_res_config_settings__vapid
+msgid "VapId of the firebase"
+msgstr "VapId de la firebase"
+
+#. module: unicubevn_pwa
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_company__vapid
+#: model:ir.model.fields,field_description:unicubevn_pwa.field_res_config_settings__vapid
+msgid "Vapid"
+msgstr "VapId"
+
+#. module: unicubevn_pwa
+#: model:ir.model,name:unicubevn_pwa.model_push_notification
+msgid "Web Push Notification"
+msgstr "Notification Push Web"
+
+#. module: unicubevn_pwa
+#. odoo-python
+#: code:addons/unicubevn_pwa/models/res_pwa_configs.py:0
+#, python-format
+msgid "You can only upload PNG files bigger than 512x512"
+msgstr "Vous ne pouvez télécharger que des fichiers PNG plus grands que 512x512 pixels"
+
+#. module: unicubevn_pwa
+#. odoo-python
+#: code:addons/unicubevn_pwa/models/res_pwa_configs.py:0
+#, python-format
+msgid "You can only upload SVG or PNG files. Found: %s."
+msgstr "Vous ne pouvez télécharger que des fichiers SVG ou PNG. Le fichier trouvé est : %s."
+
+#. module: unicubevn_pwa
+#. odoo-python
+#: code:addons/unicubevn_pwa/models/res_pwa_configs.py:0
+#, python-format
+msgid "You can't upload a file with more than 2 MB."
+msgstr "Vous ne pouvez pas télécharger un fichier de plus de 2 Mo."

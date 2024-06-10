@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates  id="templates" xml:space="preserve">
+    <t t-name="FloorScreen" t-inherit="pos_restaurant.FloorScreen" t-inherit-mode="extension" primary="1">  
+        <xpath expr="//div[hasclass('floor-map')]" position="attributes">
+            <attribute name="class"></attribute>
+        </xpath>
+    </t>        
+</templates>

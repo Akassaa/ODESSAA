@@ -1,0 +1,31 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* point_of_sale_logo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-04 11:01+0000\n"
+"PO-Revision-Date: 2024-03-04 11:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: point_of_sale_logo
+#: model:ir.model.fields,field_description:point_of_sale_logo.field_pos_config__image
+msgid "Image"
+msgstr "Image"
+
+#. module: point_of_sale_logo
+#: model:ir.model,name:point_of_sale_logo.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuration du point de vente"
+
+#. module: point_of_sale_logo
+#: model:ir.model.fields,help:point_of_sale_logo.field_pos_config__image
+msgid "Set logo image for viewing itin POS Screen and Receipt"
+msgstr "Configurer l'image du logo pour l'affichage dans l'écran du point de vente et sur le reçu."

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="templates" xml:space="preserve">
+    <t t-name="ActionpadWidgetBits" t-inherit="point_of_sale.ActionpadWidget" t-inherit-mode="extension">
+        <xpath expr="//button[@t-att-class='swapButtonClasses']" position="replace"> 
+            <button
+                t-if="this.swapButton"
+                t-attf-class="submit-order h-100 {{getMainButtonClasses()}}"
+                t-att-class="swapButtonClasses"
+                t-on-click="submitOrder"
+                style="width: 170px;">
+                <i class="fa fa-cutlery"></i>
+                Order  
+            </button>
+            <button t-if="displayCategoryCount.length" class="btn btn-secondary" t-on-click="onClickItems">
+                Order Items
+            </button>   
+        </xpath>
+        <xpath expr="//button[@t-on-click='props.onClickMore']" position="replace">
+            
+        </xpath>
+    </t>
+</templates>

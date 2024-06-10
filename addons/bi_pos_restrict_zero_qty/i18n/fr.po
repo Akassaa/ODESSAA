@@ -1,0 +1,60 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bi_pos_restrict_zero_qty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-06 10:01+0000\n"
+"PO-Revision-Date: 2024-03-06 10:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bi_pos_restrict_zero_qty
+#: model:ir.model,name:bi_pos_restrict_zero_qty.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: bi_pos_restrict_zero_qty
+#. odoo-javascript
+#: code:addons/bi_pos_restrict_zero_qty/static/src/app/models/models.js:0
+#, python-format
+msgid "Deny Order"
+msgstr "Refuser la commande"
+
+#. module: bi_pos_restrict_zero_qty
+#: model:ir.model,name:bi_pos_restrict_zero_qty.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuration du point de vente"
+
+#. module: bi_pos_restrict_zero_qty
+#: model:ir.model,name:bi_pos_restrict_zero_qty.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Session du point de vente"
+
+#. module: bi_pos_restrict_zero_qty
+#: model:ir.model.fields,field_description:bi_pos_restrict_zero_qty.field_pos_config__restrict_zero_qty
+#: model:ir.model.fields,field_description:bi_pos_restrict_zero_qty.field_res_config_settings__restrict_zero_qty
+#: model_terms:ir.ui.view,arch_db:bi_pos_restrict_zero_qty.custom_pos_config_extended_form_view
+msgid "Restrict Zero Quantity"
+msgstr "Restreindre la quantité zéro"
+
+#. module: bi_pos_restrict_zero_qty
+#. odoo-javascript
+#: code:addons/bi_pos_restrict_zero_qty/static/src/app/models/models.js:0
+#, python-format
+msgid "Zero Quantity Not allowed"
+msgstr "Quantité zéro non autorisée"
+
+
+#. module: bi_pos_restrict_zero_qty
+#: model_terms:ir.ui.view,arch_db:bi_pos_restrict_zero_qty.custom_pos_config_extended_form_view
+
+msgid "Zero Quantity Product Validation"
+msgstr "Validation des produits avec quantité zéro"
+

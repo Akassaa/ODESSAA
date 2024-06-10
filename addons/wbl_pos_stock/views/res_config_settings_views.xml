@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--# Author      : Weblytic Labs Pvt. Ltd. (<https://store.weblyticlabs.com/>)-->
+<!--# Copyright(c): 2023-Present Weblytic Labs Pvt. Ltd.-->
+<odoo>
+    <record id="res_config_settings_pos_stock_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.stock.view.form.inherit.point_of_sale</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='pos_interface_section']" position="after">
+                <block title="PoS Stock Configuration" id="pos_stock_configuration">
+                    <setting help="Enable to display product on hand qty in pos screen.">
+                        <field name="is_display_on_hand_qty"/>
+                    </setting>
+                    <setting help="Enable to display product forecasted qty in pos screen.">
+                        <field name="is_display_forecasted_qty"/>
+                    </setting>
+                    <setting help="Choose the background color of on hand qty stock label for pos screen." invisible="not is_display_on_hand_qty">
+                        <field name="on_hand_bg_color" widget="color"
+                               class="mb-4 w-auto o_im_livechat_field_widget_color"/>
+                    </setting>
+                    <setting help="Choose the background color of forecasted qty stock label for pos screen." invisible="not is_display_forecasted_qty">
+                        <field name="forecasted_bg_color" widget="color"
+                               class="mb-4 w-auto o_im_livechat_field_widget_color"/>
+                    </setting>
+                    <setting help="Choose the text color of on hand qty stock label for pos screen." invisible="not is_display_on_hand_qty">
+                        <field name="on_hand_text_color" widget="color"
+                               class="mb-4 w-auto o_im_livechat_field_widget_color"/>
+                    </setting>
+                    <setting help="Choose the text color of forecasted qty stock label for pos screen." invisible="not is_display_forecasted_qty">
+                        <field name="forecasted_text_color" widget="color"
+                               class="mb-4 w-auto o_im_livechat_field_widget_color"/>
+                    </setting>
+                    <setting help="Enable to hide all out of stock products from pos screen.">
+                        <field name="hide_out_of_stock_product"/>
+                    </setting>
+                    <setting help="Allow order even when product is out of stock.">
+                        <field name="allow_order_for_out_of_stock"/>
+                    </setting>
+                    <setting help="Choose the background color of out of stock qty stock label for pos screen.">
+                        <field name="out_of_stock_bg_color" widget="color"
+                               class="mb-4 w-auto o_im_livechat_field_widget_color"/>
+                    </setting>
+                    <setting help="Custom error message to be displayed when try to order out of stock product and must be used constant like {product_name}.">
+                        <field name="custom_error_message"/>
+                    </setting>
+                    <setting help="Choose the text color of out of stock qty stock label for pos screen.">
+                        <field name="out_of_stock_text_color" widget="color"
+                               class="mb-4 w-auto o_im_livechat_field_widget_color"/>
+                    </setting>
+                    <setting help="Deny pos order when product stock is equal to">
+                        <field name="deny_pos_order"/>
+                    </setting>
+                    <setting help="Enable to display product tax in pos screen.">
+                        <field name="is_display_tax"/>
+                    </setting>
+                    <setting help="Enable to restrict zero price order line product in pos screen.">
+                        <field name="restrict_zero_price_line"/>
+                    </setting>
+                    <setting help="Enable to restrict zero quantity order line product in pos screen.">
+                        <field name="restrict_zero_qty_line"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

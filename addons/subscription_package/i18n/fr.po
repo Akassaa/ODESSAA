@@ -1,0 +1,1614 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* subscription_package
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-04 09:02+0000\n"
+"PO-Revision-Date: 2024-03-04 09:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_stage__name
+msgid " Enter a descriptive name for the stage"
+msgstr ""
+
+#. module: subscription_package
+#: model:mail.template,body_html:subscription_package.mail_template_subscription_renew
+msgid ""
+"<div style=\"background:#F0F0F0;color:#515166;padding:10px 0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;\">\n"
+"                <table style=\"width:600px;margin:5px auto;\">\n"
+"                    <tbody>\n"
+"                        <tr>\n"
+"                            <td>\n"
+"                                <a href=\"/\">\n"
+"                                    <img src=\"/web/binary/company_logo\" style=\"vertical-align:baseline;max-width:100px;\">\n"
+"                                </a>\n"
+"                            </td>\n"
+"                            <td style=\"text-align:right;vertical-align:middle;\">\n"
+"                                Subscription Renew Alert\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"                <table style=\"width:600px;margin:0px auto;background:white;border:1px solid #e1e1e1;\">\n"
+"                    <tbody>\n"
+"                        <tr>\n"
+"                            <td style=\"padding:15px 20px 10px 20px;\">\n"
+"                                <p>Dear<t t-out=\"  object.partner_id.name or ''\"></t>,\n"
+"                                </p>\n"
+"                                <p>Your subscription Plan\n"
+"                                    <strong t-out=\"object.name or ''\"></strong>\n"
+"                                    is going to Expired on\n"
+"                                    <strong t-out=\"object.close_date or ''\"></strong>.\n"
+"                                </p>\n"
+"                                <p>If you have any concerns about it, please contact your representative at\n"
+"                                    <t t-out=\"object.company_id.name or ''\"></t>\n"
+"                                    or reply to this email.\n"
+"                                </p>\n"
+"                                <p>Kind regards.</p>\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                        <tr>\n"
+"                        </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"            </div>\n"
+"        "
+msgstr ""
+"<div style=\"background:#F0F0F0;color:#515166;padding:10px 0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;\">\n"
+"                <table style=\"width:600px;margin:5px auto;\">\n"
+"                    <tbody>\n"
+"                        <tr>\n"
+"                            <td>\n"
+"                                <a href=\"/\">\n"
+"                                    <img src=\"/web/binary/company_logo\" style=\"vertical-align:baseline;max-width:100px;\">\n"
+"                                </a>\n"
+"                            </td>\n"
+"                            <td style=\"text-align:right;vertical-align:middle;\">\n"
+"                                Alerte de renouvellement d'abonnement\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"                <table style=\"width:600px;margin:0px auto;background:white;border:1px solid #e1e1e1;\">\n"
+"                    <tbody>\n"
+"                        <tr>\n"
+"                            <td style=\"padding:15px 20px 10px 20px;\">\n"
+"                                <p>Dear<t t-out=\"  object.partner_id.name or ''\"></t>,\n"
+"                                </p>\n"
+"                                <p>Votre plan d'abonnement\n"
+"                                    <strong t-out=\"object.name or ''\"></strong>\n"
+"                                    va expirer le\n"
+"                                    <strong t-out=\"object.close_date or ''\"></strong>.\n"
+"                                </p>\n"
+"                                <p>Si vous avez des inquiétudes à ce sujet, veuillez contacter votre représentant au\n"
+"                                    <t t-out=\"object.company_id.name or ''\"></t>\n"
+"                                    ou répondez à cet email.\n"
+"                                </p>\n"
+"                                <p>Cordialement.</p>\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                        <tr>\n"
+"                        </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"            </div>\n"
+"        "
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                    Invoices\n"
+"                                </span>"
+msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                                    Factures\n"
+"                                </span>"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                    Products\n"
+"                                </span>"
+msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                                    Produits\n"
+"                                </span>"
+
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                    Sale Order\n"
+"                                </span>"
+msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                                    Commandes\n"
+"                                </span>"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                    Subscriptions\n"
+"                                </span>"
+msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                                    Abonnements\n"
+"                                </span>"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__renewal_value
+msgid ""
+"A descriptive value indicating the renewal status or details for the "
+"subscription plan."
+msgstr ""
+"Une valeur descriptive indiquant le statut de renouvellement ou les détails du"
+"plan d'abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_res_partner__is_active_subscription
+#: model:ir.model.fields,field_description:subscription_package.field_res_users__is_active_subscription
+msgid "Active Subscription"
+msgstr "Abonnement actif"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Activité Exception Décoration"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_state
+msgid "Activity State"
+msgstr "État d'activité"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icône de type d'activité"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.mail_activity_type_action
+#: model:ir.ui.menu,name:subscription_package.mail_activity_type_menu
+msgid "Activity Types"
+msgstr "Types d'activités"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__create_date
+msgid "Add Create Date"
+msgstr "Ajouter une date de création"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__currency_id
+msgid "Add Currency"
+msgstr "Ajouter une devise"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__price_tax
+msgid "Add Price Tax"
+msgstr "Ajouter une taxe sur le prix"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__price_total
+msgid "Add Product Price Total"
+msgstr "Ajouter le prix du produit total"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__product_qty
+msgid "Add Product Quantity"
+msgstr "Ajouter une quantité de produit"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__product_uom_id
+msgid "Add Product UOM"
+msgstr "Ajouter l'UdM du produit"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__unit_price
+msgid "Add Product Unit Price"
+msgstr "Ajouter le prix unitaire du produit"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__user_id
+msgid "Add Salesperson"
+msgstr "Ajouter un vendeur"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__currency_id
+msgid "Add Subscription Currency"
+msgstr "Ajouter une devise d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_close__close_reason_id
+msgid "Add Subscription Package Close Reason"
+msgstr "Ajouter un package d'abonnement Raison de fermeture"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_close__close_date
+msgid "Add Subscription Package Closed Date"
+msgstr "Ajouter la date de clôture du forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__tax_ids
+msgid "Add Taxes"
+msgstr "Ajouter des taxes"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__total_amount
+msgid "Add Total Amount"
+msgstr "Ajouter le Montant Total"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__next_invoice_date
+msgid "Add next invoice date"
+msgstr "Ajouter la date de la prochaine facture"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__partner_shipping_id
+msgid "Add shipping/service address"
+msgstr "Ajouter l'adresse de livraison/service"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__user_id
+msgid "Add the Sales person"
+msgstr "Ajouter le Commercial"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__date_started
+msgid "Add the Subscription package start date"
+msgstr "Ajouter la date de début du forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__start_date
+msgid "Add the period start date"
+msgstr "Ajouter la date de début de la période"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__tag_ids
+msgid "Add the tags"
+msgstr "Ajouter les étiquettes"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__analytic_account_id
+msgid "Analytic Account"
+msgstr "Compte Analytique"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_close_form_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__stage_category
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__category
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.recurrence_period_view_tree
+msgid "Channel"
+msgstr "Chaîne"
+
+#. module: subscription_package
+#: model:ir.actions.server,name:subscription_package.close_limit_cron_ir_actions_server
+msgid "Check Close Limit"
+msgstr "Vérifier la Limite de Clôture"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_close__closed_by
+msgid "Choose  Subscription Package Closed Person"
+msgstr "Choisir la Personne ayant Clôturé le Forfait d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__product_id
+msgid "Choose Product"
+msgstr "Choisir le Produit"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__uom_catg_id
+msgid "Choose Product Uom quantity"
+msgstr "Choisir la quantité d'unité de mesure du produit"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__subscription_id
+msgid "Choose Subscription Package"
+msgstr "Choisir le forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_account_bank_statement_line__subscription_id
+#: model:ir.model.fields,help:subscription_package.field_account_move__subscription_id
+#: model:ir.model.fields,help:subscription_package.field_account_payment__subscription_id
+msgid "Choose subscription package"
+msgstr "Choisir le forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__res_partner_id
+msgid "Choose the  Partner"
+msgstr "Choisir le partenaire"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__analytic_account_id
+msgid "Choose the analytic account"
+msgstr "Choisir le compte analytique"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_stage__category
+msgid "Choose the appropriate category from the available options."
+msgstr "Choisissez la catégorie appropriée parmi les options disponibles."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__name
+msgid "Choose the name for the subscription package."
+msgstr "Choisir le nom du forfait d'abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_sale_order__subscription_id
+msgid "Choose the subscription"
+msgstr "Choisir l'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__plan_id
+msgid "Choose the subscription package plan"
+msgstr "Choisir le plan du forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__close_reason_id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__close_reason_id
+msgid "Close Reason"
+msgstr "Raison de la clôture"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "Close Subscription"
+msgstr "Clôturer l'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__is_closed
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_stage__category__closed
+msgid "Closed"
+msgstr "Clôturé"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__closed_by
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__closed_by
+msgid "Closed By"
+msgstr "Clôturé par"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__close_date
+msgid "Closed On"
+msgstr "Clôturé le"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__close_date
+msgid "Closed on"
+msgstr "Clôturé le"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__company_id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__company_id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__company_id
+msgid "Company"
+msgstr "Entreprise"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__condition
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_stage_view_form
+msgid "Conditions"
+msgstr "Conditions"
+
+#. module: subscription_package
+#: model:ir.ui.menu,name:subscription_package.subscription_menu_config
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "Create Invoice"
+msgstr "Créer une facture"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "Create Sale Order"
+msgstr "Créer une commande de vente"
+
+#. module: subscription_package
+#: model_terms:ir.actions.act_window,help:subscription_package.product_template_kanban_view
+msgid "Create a new product"
+msgstr "Créer un nouveau produit"
+
+#. module: subscription_package
+#: model_terms:ir.actions.act_window,help:subscription_package.res_partner_action
+#: model_terms:ir.actions.act_window,help:subscription_package.subscription_package_action
+#: model_terms:ir.actions.act_window,help:subscription_package.subscription_package_to_renew_action
+msgid "Create a new subscription package !"
+msgstr "Créer un nouveau forfait d'abonnement !"
+
+#. module: subscription_package
+#: model_terms:ir.actions.act_window,help:subscription_package.subscription_package_plan_action
+msgid "Create a new subscription plan !"
+msgstr "Créer un nouveau plan d'abonnement !"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__create_date
+msgid "Create date"
+msgstr "Date de création"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__create_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__create_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__create_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__create_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__create_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__create_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__create_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__create_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__create_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__create_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__create_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__currency_id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__current_stage
+msgid "Current Stage"
+msgstr "Étape actuelle"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__current_stage
+msgid ""
+"Current stage of the subscription package. This field is computed based on "
+"the associated stage_id."
+msgstr ""
+"Étape actuelle du forfait d'abonnement. Ce champ est calculé en fonction "
+"de l'identifiant de l'étape associée."
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__limit_choice__custom
+msgid "Custom"
+msgstr "Personnalisé"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__limit_count
+msgid "Custom Renewal Limit"
+msgstr "Limite de Renouvellement Personnalisée"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__partner_id
+msgid "Customer"
+msgstr "Client"
+
+#. module: subscription_package
+#: model:ir.ui.menu,name:subscription_package.subscriptions_menu_subscriptions_customers
+msgid "Customers"
+msgstr "Clients"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__renewal_period__days
+msgid "Day(s)"
+msgstr "Jour(s)"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__recurrence_period__unit__days
+msgid "Days"
+msgstr "Jours"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__days_to_end
+msgid "Days End"
+msgstr "Fin des Jours"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__description
+msgid "Description"
+msgstr "Description"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__sequence
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_stage__sequence
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_stop__sequence
+msgid "Determine the display order"
+msgstr "Déterminer l'ordre d'affichage"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__discount
+msgid "Discount (%)"
+msgstr "Remise (%)"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__display_name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__display_name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__display_name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__display_name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__display_name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__display_name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__display_name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_report__display_name
+msgid "Display Name"
+msgstr "Nom d'Affichage"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__invoice_mode__draft_invoice
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_stage__category__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__duration
+msgid "Duration"
+msgstr "Durée"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_stop__name
+msgid "Enter the reason for stopping the subscription package."
+msgstr "Entrez la raison d'arrêt du forfait d'abonnement."
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "Every"
+msgstr "Tous les"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__is_fold
+msgid "Folded in Kanban"
+msgstr "Replié dans Kanban"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icône Font awesome par exemple fa-tasks"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: subscription_package
+#: model:ir.module.category,description:subscription_package.module_subscription_category
+msgid "Helps you handle your subscription security."
+msgstr "Vous aide à gérer la sécurité de votre abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_report__id
+msgid "ID"
+msgstr "ID"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_exception_icon
+msgid "Icon"
+msgstr "Icône"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icône pour indiquer une activité exceptionnelle."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, les nouveaux messages nécessitent votre attention."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__message_has_error
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur de livraison."
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_stage__category__progress
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_product_product__is_subscription
+#: model:ir.model.fields,help:subscription_package.field_product_template__is_subscription
+msgid "Indicates whether the product is associated with a subscription or not."
+msgstr "Indique si le produit est associé à un abonnement ou non."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__partner_invoice_id
+msgid "Invoice Address"
+msgstr "Adresse de facturation"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__invoice_mode
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__invoice_mode
+msgid "Invoice Mode"
+msgstr "Mode de facturation"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "Invoice on"
+msgstr "Facturation le"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__invoice_count
+msgid "Invoices"
+msgstr "Factures"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__is_closed
+msgid "Is Closed"
+msgstr "Est clôturé"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_is_follower
+msgid "Is Follower"
+msgstr "Est Suiveur"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_account_bank_statement_line__is_subscription
+#: model:ir.model.fields,field_description:subscription_package.field_account_move__is_subscription
+#: model:ir.model.fields,field_description:subscription_package.field_account_payment__is_subscription
+#: model:ir.model.fields,field_description:subscription_package.field_product_product__is_subscription
+#: model:ir.model.fields,field_description:subscription_package.field_product_template__is_subscription
+#: model:ir.model.fields,field_description:subscription_package.field_sale_order__is_subscription
+msgid "Is Subscription"
+msgstr "Est un Abonnement"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.product_template_search_view
+msgid "Is Subscription Product"
+msgstr "Est un Produit d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_res_partner__is_active_subscription
+#: model:ir.model.fields,help:subscription_package.field_res_users__is_active_subscription
+msgid "Is Subscription is active"
+msgstr "Est-ce que l'abonnement est actif"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_account_bank_statement_line__is_subscription
+#: model:ir.model.fields,help:subscription_package.field_account_move__is_subscription
+#: model:ir.model.fields,help:subscription_package.field_account_payment__is_subscription
+#: model:ir.model.fields,help:subscription_package.field_sale_order__is_subscription
+msgid "Is subscription"
+msgstr "Est un abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__is_to_renew
+msgid "Is subscription package is renew"
+msgstr "Est-ce que le forfait d'abonnement est renouvelé"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__journal_id
+msgid "Journal"
+msgstr "Journal"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_account_move
+msgid "Journal Entry"
+msgstr "Entrée de Journal"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__write_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__write_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__write_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__write_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__write_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__write_uid
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__write_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_close__write_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__write_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__write_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__write_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__write_date
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__limit_choice
+msgid "Limit Choice"
+msgstr "Choix de la Limite"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__invoice_mode__manual
+msgid "Manually"
+msgstr "Manuellement"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison de message"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__renewal_period__months
+msgid "Month(s)"
+msgstr "Mois"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__recurrence_period__unit__months
+#: model:uom.uom,name:subscription_package.product_uom_months
+msgid "Months"
+msgstr "Mois"
+
+#. module: subscription_package
+#. odoo-python
+#: code:addons/subscription_package/models/subscription_package.py:0
+#, python-format
+msgid ""
+"More than one stage is having category \"Draft\". Please change category of "
+"stage to \"In Progress\", only one stage is allowed to have category "
+"\"Draft\""
+msgstr ""
+"Plus d'une étape a la catégorie \"Brouillon\". Veuillez changer la catégorie "
+"de l'étape en \"En cours\", seule une étape est autorisée à avoir la "
+"catégorie \"Brouillon\"."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Ma date limite d'activité"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__name
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Prochain événement du calendrier d'activités"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Prochaine échéance d'activité"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_summary
+msgid "Next Activity Summary"
+msgstr "Résumé de la prochaine activité"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_type_id
+msgid "Next Activity Type"
+msgstr "Type de prochaine activité"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__next_invoice_date
+msgid "Next Invoice Date"
+msgstr "Date de la prochaine facture"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "Number of Occurrence"
+msgstr "Nombre d'occurrences"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__limit_choice__ones
+msgid "Ones"
+msgstr "Unités"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "Other Info"
+msgstr "Autres Informations"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__res_partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__start_date
+msgid "Period Start Date"
+msgstr "Date de début de la période"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_pivot
+msgid "Pivot View"
+msgstr "Vue Pivot"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__name
+msgid "Plan Name"
+msgstr "Nom du plan"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__price_tax
+msgid "Price Tax"
+msgstr "Taxe sur le prix"
+
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__price_total
+msgid "Price Total"
+msgstr "Prix Total"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_product_template
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__product_id
+msgid "Product"
+msgstr "Produit"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "Product lines"
+msgstr "Lignes de produits"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.product_template_kanban_view
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__product_count
+#: model:ir.ui.menu,name:subscription_package.subscription_menu_subscription_products
+msgid "Products"
+msgstr "Produits"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_res_partner__subscription_product_line_ids
+#: model:ir.model.fields,field_description:subscription_package.field_res_users__subscription_product_line_ids
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__product_line_ids
+msgid "Products Line"
+msgstr "Lignes de produits"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__product_qty
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_report__quantity
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__rating_ids
+msgid "Ratings"
+msgstr "Évaluations"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__name
+msgid "Reason"
+msgstr "Raison"
+
+#. module: subscription_package
+#: model:ir.ui.menu,name:subscription_package.subscription_package_stop_menu
+msgid "Reason to Close"
+msgstr "Raison de fermeture"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.recurrence_period_action
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__recurrence_period_id
+#: model:ir.ui.menu,name:subscription_package.reference_period_menu
+msgid "Recurrence Period"
+msgstr "Période de récurrence"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_recurrence_period
+msgid "Recurrence Period "
+msgstr "Période de récurrence"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_report__total_recurring_price
+msgid "Recurring Price"
+msgstr "Prix récurrent"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__reference_code
+msgid "Reference"
+msgstr "Référence"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__renewal_value
+msgid "Renewal"
+msgstr "Renouvellement"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "Renewal Limit"
+msgstr "Limite de renouvellement"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__renewal_period
+msgid "Renewal Period"
+msgstr "Période de renouvellement"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__renewal_time
+msgid "Renewal Time Interval"
+msgstr "Intervalle de temps de renouvellement"
+
+#. module: subscription_package
+#: model:ir.ui.menu,name:subscription_package.subscription_report_menu
+msgid "Report"
+msgstr "Rapport"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur Responsable"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur de Livraison SMS"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "START"
+msgstr "DÉBUT"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__sale_order_id
+msgid "Sale Order"
+msgstr "Bon de Commande"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__sale_order_count
+msgid "Sale Order Count"
+msgstr "Nombre de Commandes"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__so_count
+msgid "Sales"
+msgstr "Ventes"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_sale_order
+msgid "Sales Order"
+msgstr "Commande de Vente"
+
+#. module: subscription_package
+#. odoo-python
+#: code:addons/subscription_package/models/subscription_package.py:0
+#, python-format
+msgid "Sales Orders"
+msgstr "Commandes de Vente"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__user_id
+msgid "Sales Person"
+msgstr "Vendeur"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__user_id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_report__user_id
+msgid "Salesperson"
+msgstr "Vendeur"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__company_id
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_product_line__company_id
+msgid "Select the company"
+msgstr "Sélectionner l'entreprise"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__partner_id
+msgid "Select the customer associated with this record."
+msgstr "Sélectionner le client associé à cet enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__partner_invoice_id
+msgid "Select the invoice address associated with this record."
+msgstr "Sélectionner l'adresse de facturation associée à cet enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__invoice_mode
+msgid ""
+"Select the invoice mode for the subscription plan, specifying whether "
+"invoices are generated manually or in draft state."
+msgstr ""
+"Sélectionner le mode de facturation pour le plan d'abonnement, spécifiant si "
+"les factures sont générées manuellement ou à l'état brouillon."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__limit_choice
+msgid ""
+"Select the limit choice for the subscription plan, specifying how long it "
+"will be active."
+msgstr ""
+"Sélectionner le choix de limite pour le plan d'abonnement, spécifiant "
+"combien de temps il restera actif."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__sale_order_id
+msgid "Select the sale order"
+msgstr "Sélectionner le bon de commande"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_product_product__subscription_plan_id
+#: model:ir.model.fields,help:subscription_package.field_product_template__subscription_plan_id
+msgid "Select the subscription plan associated with this record."
+msgstr "Sélectionner le plan d'abonnement associé à cet enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_recurrence_period__unit
+msgid ""
+"Select the unit of time associated with this record. Choose from the "
+"available options."
+msgstr ""
+"Sélectionner l'unité de temps associée à cet enregistrement. Choisissez parmi "
+"les options disponibles."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__renewal_period
+msgid "Select the unit of time for the renewal period of the subscription plan."
+msgstr "Sélectionnez l'unité de temps pour la période de renouvellement du plan d'abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__sequence
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__sequence
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stop__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__partner_shipping_id
+msgid "Shipping/Service Address"
+msgstr "Adresse de Livraison/Service"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__short_code
+msgid "Short Code"
+msgstr "Code Court"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_stage_view_form
+msgid "Specify the conditions that need to be satisfied to move to this stage."
+msgstr "Spécifiez les conditions qui doivent être satisfaites pour passer à cette étape."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__limit_count
+msgid ""
+"Specify the custom renewal limit for the subscription plan. This field is "
+"relevant when the \"Limit Choice\" is set to \"Custom\"."
+msgstr ""
+"Indiquez la limite de renouvellement personnalisée pour le plan "
+"d'abonnement. Ce champ est pertinent lorsque le \"Choix de Limite\" est "
+"défini sur \"Personnalisé\"."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__stage_id
+msgid "Stage"
+msgstr "Étape"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_stage__name
+msgid "Stage Name"
+msgstr "Nom de l'Étape"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.subscription_package_stage_action
+#: model:ir.ui.menu,name:subscription_package.subscription_package_stage_menu
+msgid "Stages"
+msgstr "Étapes"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Statut basé sur les activités\n"
+"En retard: La date d'échéance est déjà passée\n"
+"Aujourd'hui: La date d'activité est aujourd'hui\n"
+"Planifié: Activités futures."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_sale_order__sub_reference
+msgid "Sub Reference Code"
+msgstr "Code de Référence"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_close_form_view
+msgid "Submit"
+msgstr "Soumettre"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__date_started
+msgid "Subscription Start date"
+msgstr "Date de Début de l'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_account_bank_statement_line__subscription_id
+#: model:ir.model.fields,field_description:subscription_package.field_account_move__subscription_id
+#: model:ir.model.fields,field_description:subscription_package.field_account_payment__subscription_id
+#: model:ir.model.fields,field_description:subscription_package.field_sale_order__subscription_id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__subscription_id
+#: model:ir.module.category,name:subscription_package.module_subscription_category
+#: model:ir.ui.menu,name:subscription_package.subscription_menu_root
+#: model_terms:ir.ui.view,arch_db:subscription_package.product_normal_form_view
+#: model_terms:ir.ui.view,arch_db:subscription_package.product_template_only_form_view
+#: model_terms:ir.ui.view,arch_db:subscription_package.view_partner_form
+msgid "Subscription"
+msgstr "Abonnement"
+
+#. module: subscription_package
+#: model:res.groups,name:subscription_package.group_subscription_manager
+msgid "Subscription Administrator"
+msgstr "Administrateur d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_subscription_report
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_report_view_graph
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_report_view_pivot
+msgid "Subscription Analysis"
+msgstr "Analyse des Abonnements"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_subscription_close
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_close_form_view
+msgid "Subscription Close Wizard"
+msgstr "Assistant de Clôture d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_subscription_package
+msgid "Subscription Package"
+msgstr "Forfait d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_subscription_package_plan
+msgid "Subscription Package Plan"
+msgstr "Plan de Forfait d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_subscription_package_product_line
+msgid "Subscription Package Product Lines"
+msgstr "Lignes de Produits du Forfait d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_subscription_package_stage
+msgid "Subscription Package Stages"
+msgstr "Étapes du Forfait d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model,name:subscription_package.model_subscription_package_stop
+msgid "Subscription Package Stop Reason"
+msgstr "Raison d'Arrêt du Forfait d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__stage_id
+msgid "Subscription Package stage"
+msgstr "Étape du Forfait d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.subscription_package_plan_action
+#: model:ir.model.fields,field_description:subscription_package.field_product_product__subscription_plan_id
+#: model:ir.model.fields,field_description:subscription_package.field_product_template__subscription_plan_id
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__plan_id
+#: model:ir.ui.menu,name:subscription_package.subscription_config_menu_subscription_template
+msgid "Subscription Plan"
+msgstr "Plan d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_sale_order__sub_reference
+msgid "Subscription Reference Code"
+msgstr "Code de Référence d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.subscription_package_stop_action
+msgid "Subscription Stop Reason"
+msgstr "Raison d'Arrêt de l'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_report__plan_id
+msgid "Subscription Template"
+msgstr "Modèle d'Abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__days_to_end
+msgid "Subscription ending date"
+msgstr "Date de fin d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__description
+msgid "Subscription package description"
+msgstr "Description du forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__invoice_count
+msgid "Subscription package invoice count"
+msgstr "Nombre de factures du forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__product_line_ids
+msgid "Subscription package product line"
+msgstr "Ligne de produit du forfait d'abonnement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_res_partner__subscription_product_line_ids
+#: model:ir.model.fields,help:subscription_package.field_res_users__subscription_product_line_ids
+msgid "Subscription product"
+msgstr "Produit d'abonnement"
+
+#. module: subscription_package
+#: model:mail.template,name:subscription_package.mail_template_subscription_renew
+msgid "Subscription: Email Renew Alert"
+msgstr "Renouvellement d'abonnement : Alerte de Renouvellement par E-mail"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.subscription_package_action
+#: model:ir.model.fields,field_description:subscription_package.field_sale_order__subscription_count
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__subscription_count
+#: model:ir.ui.menu,name:subscription_package.subscription_menu_subscriptions
+#: model:ir.ui.menu,name:subscription_package.subscriptions_menu_subscriptions
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+#: model_terms:ir.ui.view,arch_db:subscription_package.view_partner_form
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.res_partner_action
+msgid "Subscriptions Customers"
+msgstr "Clients Abonnements"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.subscription_report_action
+msgid "Subscriptions Report"
+msgstr "Rapport des Abonnements"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_sale_order__subscription_count
+msgid "Subscriptions count"
+msgstr "Nombre d'abonnements"
+
+#. module: subscription_package
+#: model:ir.actions.act_window,name:subscription_package.subscription_package_to_renew_action
+#: model:ir.ui.menu,name:subscription_package.subscriptions_menu_subscriptions_to_renew
+msgid "Subscriptions to Renew"
+msgstr "Abonnements à Renouveler"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__total_amount
+msgid "Subtotal"
+msgstr "Sous-total"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__tag_ids
+msgid "Tags"
+msgstr "Étiquettes"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__tax_total
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__tax_ids
+msgid "Taxes"
+msgstr "Taxes"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_plan__terms_and_conditions
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "Terms and Conditions"
+msgstr "Termes et Conditions"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "Terms and Conditions."
+msgstr "Termes et Conditions."
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "Terms and conditions"
+msgstr "Termes et conditions"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "Terms and conditions."
+msgstr "Termes et conditions."
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.recurrence_period_view_form
+msgid "Test"
+msgstr "Test"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__stage_category
+msgid "The category associated with the current stage of the record. "
+msgstr "La catégorie associée à l'étape actuelle de l'enregistrement. "
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__renewal_time
+msgid ""
+"The computed renewal time interval for the subscription plan, based on the "
+"selected renewal period."
+msgstr ""
+"L'intervalle de temps de renouvellement calculé pour le plan d'abonnement, "
+"basé sur la période de renouvellement sélectionnée."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__sale_order_count
+msgid "The count of associated sale orders for this record."
+msgstr "Le nombre de commandes de vente associées à cet enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__close_date
+msgid "The date on which the record was closed"
+msgstr "La date à laquelle l'enregistrement a été clos"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_recurrence_period__duration
+msgid "The duration associated with this record. Enter the duration value."
+msgstr ""
+"La durée associée à cet enregistrement. Entrez la valeur de la durée."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__invoice_mode
+msgid "The invoice mode associated with the plan."
+msgstr "Le mode de facturation associé au plan."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_recurrence_period__name
+msgid ""
+"The name of the recurrence period. Enter a descriptive name for the period."
+msgstr ""
+"Le nom de la période de récurrence. Entrez un nom descriptif pour la période."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_plan__name
+msgid "The name of the subscription plan."
+msgstr "Le nom du plan d'abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_report__quantity
+msgid "The quantity associated with this subscription analysis."
+msgstr "La quantité associée à cette analyse d'abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__close_reason_id
+msgid "The reason for closing the subscription package."
+msgstr "La raison de la fermeture du forfait d'abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_report__user_id
+msgid "The salesperson associated with this record."
+msgstr "Le commercial associé à cet enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_report__plan_id
+msgid "The subscription template associated with this record."
+msgstr "Le modèle d'abonnement associé à cet enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__tax_total
+msgid "The total amount of taxes associated with the record"
+msgstr "Le montant total des taxes associé à l'enregistrement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__total_recurring_price
+msgid "The total recurring price excluding taxes."
+msgstr "Le prix récurrent total hors taxes."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__total_with_tax
+msgid "The total recurring price including taxes"
+msgstr "Le prix récurrent total incluant les taxes"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__closed_by
+msgid "The user responsible for closing the record"
+msgstr "L'utilisateur responsable de la clôture de l'enregistrement"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__reference_code
+msgid "This field represents the reference code associated with the record."
+msgstr "Ce champ représente le code de référence associé à l'enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_stage__is_fold
+msgid ""
+"This stage is folded in the kanban view when there are no records in that "
+"stage to display."
+msgstr ""
+"Cette étape est repliée dans la vue kanban lorsqu'il n'y a pas d'enregistrements "
+"dans cette étape à afficher."
+
+#. module: subscription_package
+#: model:uom.category,name:subscription_package.uom_categ_time
+msgid "Time"
+msgstr "Temps"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__is_to_renew
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_kanban
+msgid "To Renew"
+msgstr "À Renouveler"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__total_with_tax
+msgid "Total Recurring Price"
+msgstr "Prix Récurrent Total"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_report__total_recurring_price
+msgid "Total recurring price associated with this subscription analysis."
+msgstr "Prix récurrent total associé à cette analyse d'abonnement."
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type d'activité d'exception sur l'enregistrement."
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_recurrence_period__unit
+msgid "Unit"
+msgstr "Unité"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__unit_price
+msgid "Unit Price"
+msgstr "Prix unitaire"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__total_recurring_price
+msgid "Untaxed Amount"
+msgstr "Montant non imposé"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__limit_choice__manual
+msgid "Until Closed Manually"
+msgstr "Jusqu'à fermeture manuelle"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__product_uom_id
+msgid "UoM"
+msgstr "UM"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package_product_line__uom_catg_id
+msgid "UoM Category"
+msgstr "Catégorie d'UM"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package_stage__condition
+msgid "Use this field to provide detailed information about the conditions"
+msgstr "Utilisez ce champ pour fournir des informations détaillées sur les conditions"
+
+#. module: subscription_package
+#: model:res.groups,name:subscription_package.group_subscription_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: subscription_package
+#: model:ir.model.fields,field_description:subscription_package.field_subscription_package__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site Web"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__website_message_ids
+msgid "Website communication history"
+msgstr "Historique de la communication du site Web"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__renewal_period__weeks
+msgid "Week(s)"
+msgstr "Semaine(s)"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__recurrence_period__unit__weeks
+msgid "Weeks"
+msgstr "Semaines"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__subscription_package_plan__renewal_period__years
+msgid "Year(s)"
+msgstr "Année(s)"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__recurrence_period__unit__years
+#: model:uom.uom,name:subscription_package.product_uom_years
+msgid "Years"
+msgstr "Années"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_package_view_form
+msgid "e.g. Monthly Subscriptions"
+msgstr "par ex. Abonnements Mensuels"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "e.g. Yearly Subscription"
+msgstr "par ex. Abonnement Annuel"
+
+#. module: subscription_package
+#: model:ir.model.fields.selection,name:subscription_package.selection__recurrence_period__unit__hours
+msgid "hours"
+msgstr "heures"
+
+#. module: subscription_package
+#: model:ir.model.fields,help:subscription_package.field_subscription_package__so_count
+msgid "subscription package sales count"
+msgstr "nombre de ventes de forfait d'abonnement"
+
+#. module: subscription_package
+#: model_terms:ir.ui.view,arch_db:subscription_package.subscription_plan_view_form
+msgid "term(s)"
+msgstr "terme(s)"
+
+#. module: subscription_package
+#: model:mail.template,subject:subscription_package.mail_template_subscription_renew
+msgid ""
+"{{ object.company_id.name }}: Please check the subscription {{ object.name "
+"}}"
+msgstr ""
+"{{ object.company_id.name }} : Veuillez vérifier l'abonnement {{ object.name "
+"}}"
